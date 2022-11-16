@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  poweroffbot:
+    env_file: .env
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    command: ruby main.rb
